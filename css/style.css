@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.content{
+    display:flex;
+    justify-content: space-between;
+}
+.header-img{
+    height:100vh;
+    border: rgb(91,163,56);     
+    opacity:0.9;     
+}
+.left{
+    padding-left:100px;    
+    padding-top: 180px;
+    color: rgb(5, 50, 68);
+}
+.left h3{
+    font-size: 45px;
+    font-family: 'Dosis', sans-serif;
+}
+.left p{
+    font-size: 20px;
+    line-height: 1.4;
+    color: rgb(5, 50, 68)
+}
+.left button{
+    background: linear-gradient(to left, skyblue, pink);   
+    border:none;
+    padding: 0 25px 0 25px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top:50px;
+}
+.left button a{
+    color:#fff;
+    text-decoration:none
+}
