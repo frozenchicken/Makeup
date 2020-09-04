@@ -3,43 +3,199 @@
     padding: 0 ;
     /* overflow: hidden; */
 }
-
-main{
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left:50px;
+    margin-right:50px;
+    padding-top:30px;
+    padding-bottom: 20px;
+}
+nav h1{
     text-align:center;
+    color: rgb(5, 50, 68);
+    font-size:30px;
+}
+main{
     margin:0  auto;
 }
-main h1{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: rgb(5, 50, 68);
+button{
+    background: linear-gradient(to left, skyblue, pink);   
+    border:none;
+    padding: 0 10px 0 10px;
+    height: 40px;
+    border-radius: 5px;
 }
-.container{
-    position: relative;
-    /* overflow: hidden; */
-    width:100%;
-    height:80vh;    
+button a{
+    color:#fff;
+    text-decoration:none
 }
-.contianer .slider{
-    position: absolute;
-    top:0;
-    left:0;
-    width:500%;
-    height:100%;
-    float:left
+.wrapper{
+    display:grid;    
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap:20px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 0;
+    margin-bottom:10px;
+    margin-left:50px;
+    margin-right: 50px;
 }
-.container .slider .slide{
-    position: relative;
-    width:20%;
-    height:100%;
-    float:left
+.wrapper1{
+    display:grid;    
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap:20px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 0;
+    margin-bottom:10px;
+    margin-left:50px;
+    margin-right: 50px;
 }
-.container .slider .slide .caption{
-    position: absolute;
-    /* bottom: 60px;
-    left:60px;
-    right: 60px;
-    padding:30px; */
-    background: rgba(0 ,0, 0, .5);
+.wrapper .img1{
+    background:url(https://res.cloudinary.com/frozenchicken/image/upload/v1598540984/CHIOMA%20MAKEUP/IMG_9095_qrqavp.jpg);
+    padding:1em;
+    background-size: cover;
+    height: 60vh
+}
+.wrapper .img2{
+    background:url(https://res.cloudinary.com/frozenchicken/image/upload/v1598540991/CHIOMA%20MAKEUP/IMG_9120_tsd6lx.jpg);
+    padding:1em;
+    background-size: cover;
+    height: 60vh
+}
+.wrapper .img3{
+    background:url(https://res.cloudinary.com/frozenchicken/image/upload/v1598540977/CHIOMA%20MAKEUP/IMG_5700_ftpjht.jpg);
+    padding:1em;
+    background-size: cover;
+    height: 60vh
+}
+.wrapper .img4{
+    background:url(https://res.cloudinary.com/frozenchicken/image/upload/v1598604610/CHIOMA%20MAKEUP/IMG_9173_l9lcha.jpg);
+    padding:1em;
+    background-size: cover;
+    height: 60vh
+}
+.wrapper .img5{
+    background:url(https://res.cloudinary.com/frozenchicken/image/upload/v1598540988/CHIOMA%20MAKEUP/IMG_9117_fdbdus.jpg);
+    padding:1em;
+    background-size: cover;
+    height: 60vh
+}
+.wrapper1 .img6{
+    background:url(https://res.cloudinary.com/frozenchicken/image/upload/v1598608703/CHIOMA%20MAKEUP/IMG_6087_iekvuv.jpg);
+    padding:1em;
+    background-size: cover;
+    height: 60vh;    
+}
+.wrapper1 .img7{
+    background:url(https://res.cloudinary.com/frozenchicken/image/upload/v1599226211/CHIOMA%20MAKEUP/WhatsApp_Image_2020-09-01_at_18.24.38_abunlf.jpg);
+    padding:1em;
+    background-size: cover;
+    height: 60vh;    
+}
+.wrapper1 .img8{
+    background:url(https://res.cloudinary.com/frozenchicken/image/upload/v1599228899/CHIOMA%20MAKEUP/WhatsApp_Image_2020-09-04_at_09.14.04_mcv5mv.jpg);
+    padding:1em;
+    background-size: cover;
+    height: 60vh;    
+}
+.header{
+    background:  rgb(5, 50, 68);
+}
+.header-content{
+    display: flex;
+    justify-content: space-around;
+    padding:40px 0 20px 0
+}
+.left{
+    width:40%
+}
+
+.left button{
+    background: linear-gradient(to left, skyblue, pink);   
+    border:none;
+    padding: 0 25px 0 25px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top:20px;
+}
+.left button a{
+    color:#fff;
+    text-decoration:none
+}
+#header-contact{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
     box-sizing: border-box;
+    border: none;
+    background:  rgb(5, 50, 68);
+    border-bottom: 2px solid #fff;
+    color:#c6c9d9;
+    font-size:20px
+}
+#header-contact:focus{
+    border:  #555;      
+}
+#header-contact::placeholder, 
+textarea::placeholder{
+    font-size:15px;
     color:#fff
 }
+textarea {
+    width: 100%;  
+    margin: 8px 0;  
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border:none;
+    border-bottom: 2px solid #fff;
+    background-color: rgb(5, 50, 68);
+    font-size: 16px;
+    resize: none;
+    color:#c6c9d9
+}
+.right h3{
+    font-size: 45px;
+    font-family: 'Dosis', sans-serif;
+    color: #fff
+}
+.right p{
+    font-size: 20px;
+    line-height: 1.4;
+    color: #c6c9d9;
+    width:70%;
+    margin-top:20px
+}
+.contact-link{
+    color:#c6c9d9;
+    font-size: 20px;
+}
+.contact-sm{
+    padding-top:20px
+}
+.contact-sm a{
+    text-decoration: none;
+    color:#c6c9d9;
+}
+.contact-sm i{
+    margin-right:10px
+}
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+.right{
+    width:40%
+}
+

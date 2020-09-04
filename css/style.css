@@ -40,3 +40,13 @@
     color:#fff;
     text-decoration:none
 }
+@media (max-width: 480px){
+    *{
+        overflow: visible;
+    }
+    .content{
+        display: block;
+        justify-content: center;        
+    }
+    
+}
